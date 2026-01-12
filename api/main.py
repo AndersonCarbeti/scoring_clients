@@ -69,6 +69,9 @@ def predict(req: PredictRequest):
     except Exception:
         logger.exception("Prediction error")
         raise HTTPException(status_code=500, detail="Internal prediction error")
+@app.get("/")
+def root():
+    return {"service": "pret-a-depenser-scoring-api", "status": "ok", "docs": "/docs", "health": "/health"}
 
 @app.post("/predict-batch")
 def predict_batch(req: BatchPredictRequest):
