@@ -79,3 +79,4 @@ Ajoute un secret `RENDER_DEPLOY_HOOK_URL` (Settings → Secrets and variables �
 
 MLflow permet de référencer un modèle par alias via un URI `models:/MyModel@champion`.
 Voir : https://mlflow.org/docs/latest/ml/model-registry/
+# trigger CI
